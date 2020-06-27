@@ -1,0 +1,193 @@
+/*Esercizio 1*/
+
+.ex-1-square {
+    transition: 2.5s;
+}
+.ex-1-square:hover {
+    background-color: red;
+}
+
+/*Esercizio 2*/
+
+.ex-2-square {
+    transition: 1.5s;
+}
+
+.ex-2-square:active {
+    width: 100%;
+}
+
+/*Esercizio 3*/
+
+.ex-3-square {
+    transition: 2s;
+}
+
+.ex-3-square:hover {
+    border-radius: 50px;
+}
+
+/*Esercizio 4*/
+
+.ex-4-square {
+    transition: 2s;
+}
+
+.ex-4-square:hover {
+    opacity: 0
+}
+
+/*Eserzio 5*/
+
+.ex-5-square {
+    transition: 1.5s;
+}
+
+.ex-5-square:hover {
+    transform: scale(2);
+}
+.ex-5-square:active {
+    transform: scale(.5);
+}
+
+/*Eserzio 6*/
+
+.ex-6-img:hover {
+    filter: grayscale(1);
+}
+
+/*Eserzio 7*/
+
+.ex-7-img {
+    transition: 1.5s;
+}
+.ex-7-img:hover {
+    filter: grayscale(.6) sepia(.5);
+}
+
+/*Eserzio 8*/
+
+.ex-8-img {
+    transition: 2s;
+}
+.ex-8-img:hover {
+    filter: grayscale(.6) sepia(.5);
+    border-radius: 20px;
+}
+
+/*Eserzio 9*/
+
+.ex-9-img {
+    transition: 2s;
+}
+.ex-9-img:hover {
+    filter: grayscale(.6) sepia(.5);
+    border-radius: 20px;
+    transform: scale(1.5);
+}
+
+/*Eserzio 10*/
+
+.ex-10-icon {
+    animation: spin 1s linear infinite;
+}
+@keyframes spin {
+    0% {
+        transform: rotate(1turn);
+    }
+}
+
+/*Eserzio 11*/
+
+.ex-11-icon:hover {
+    animation: giraUnPochino 2s linear;
+}
+@keyframes giraUnPochino {
+    0% {
+        transform: rotate(0);
+    }
+    90% {
+        transform: rotate(315deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
+/*Eserzio 12*/
+
+.ex-12-button:hover .ex-12-top-white {
+    animation: barraDiSopra 2s linear;
+}
+@keyframes barraDiSopra {
+    0% {
+        left: 10%;
+    }
+    50% {
+        left: calc(100% - 60px);
+    }
+    100% {
+        left: 10%;
+    }
+}
+
+/*Eserzio 13*/
+
+ex-13-button:hover .ex-13-top-white {
+    animation: muoviIlTop 2s linear;
+}
+@keyframes muoviIlTop {
+    0% {
+        left: 10%;
+        top: -10px;
+    }
+    30% {
+        left: calc(100% - 30px);
+        top: -10px;
+    }
+    45% {
+        left: calc(100% - 30px);
+        top: 100%;
+    }
+    75% {
+        left: 0;
+        top: 100%;
+    }
+    90% {
+        left: -15px;
+        top: -10px;
+    }
+    100% {
+        left: 10%;
+        top: -10px;
+    }
+}
+.ex-13-button:hover .ex-13-bottom-white {
+    animation: muoviIlBottom 2s linear;
+}
+@keyframes muoviIlBottom {
+    0% {
+        bottom: -10px;
+        right: 20%;
+    }
+    30% {
+        right: calc(100% - 30px);
+        bottom: -10px;
+    }
+    45% {
+        right: calc(100% - 30px);
+        bottom: 100%;
+    }
+    75% {
+        right: 0;
+        bottom: 100%;
+    }
+    90% {
+        right: -15px;
+        bottom: -10px;
+    }
+    100% {
+        bottom: -10px;
+        right: 20%;
+    }
+}
